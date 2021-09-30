@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BookStore.BookStoreProcess">
+    <Position X="6" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>BookStoreProcess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.BookStoreProcessAbstract">
+    <Position X="6" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAEBAA=</HashCode>
+      <FileName>BookStoreProcessAbstract.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_componentCreator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BookStore.ComponentCreator">
+    <Position X="9.75" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>gABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAA=</HashCode>
+      <FileName>ComponentCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.ComponentCreatorAbstract">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Handlers" Type="BookStore.Handlers.HandlersObservableAbstract" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.5" Y="1.14" />
+        <Point X="12.021" Y="1.14" />
+        <Point X="12.021" Y="2.562" />
+        <Point X="14.25" Y="2.562" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Loader" Type="BookStore.ILoader" ManuallyRouted="true">
+      <Path>
+        <Point X="11.5" Y="1.14" />
+        <Point X="11.976" Y="1.14" />
+        <Point X="11.976" Y="2.922" />
+        <Point X="13.115" Y="2.922" />
+        <Point X="13.115" Y="5.296" />
+        <Point X="14.875" Y="5.296" />
+        <Point X="14.875" Y="6.031" />
+        <Point X="15.25" Y="6.031" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Output" Type="BookStore.IOutput" ManuallyRouted="true">
+      <Path>
+        <Point X="11.5" Y="1.32" />
+        <Point X="11.875" Y="1.32" />
+        <Point X="11.875" Y="4.288" />
+        <Point X="12.594" Y="4.288" />
+        <Point X="12.594" Y="5.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gABAAAAAAAEAAAAAAAAIAAAAAEAAAAAAAAAEAAAABAA=</HashCode>
+      <FileName>ComponentCreatorAbstract.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Handlers" />
+      <Field Name="Loader" />
+      <Field Name="Output" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BookStore.ExcelOutput" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQgAQAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExcelOutput.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.173" Collapsed="true" />
+  </Class>
+  <Class Name="BookStore.JsonLoader" BaseTypeListCollapsed="true">
+    <Position X="15" Y="6.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>JsonLoader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BookStore.Handlers.AuthorHandler" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Handlers\AuthorHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BookStore.Handlers.HalachicHandler" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Handlers\HalachicHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BookStore.Handlers.HandlersObservableAbstract" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="2.5" Width="2.25" />
+    <AssociationLine Name="_handlers" Type="BookStore.Handlers.IHandler" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.5" Y="2.5" />
+        <Point X="14.5" Y="2.313" />
+        <Point X="12.419" Y="2.313" />
+        <Point X="12.419" Y="0.75" />
+        <Point X="12.75" Y="0.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Handlers\HandlersObservableAbstract.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_handlers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BookStore.Handlers.PriceHandler" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Handlers\PriceHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BookStore.Handlers.HandlersObservable">
+    <Position X="14.25" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Handlers\HandlersObservable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="BookStore.Handlers.IHandler" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Handlers\IHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BookStore.ILoader" Collapsed="true">
+    <Position X="15.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ILoader.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BookStore.IOutput" Collapsed="true">
+    <Position X="12.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IOutput.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
